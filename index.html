@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gửi mẹ ngày 20/10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gate" role="button" tabindex="0" aria-label="Nhấp vào để xem">
+  <div class="door l"></div>
+  <div class="door r"></div>
+  <div class="gt"><span class="k">Gửi mẹ, 20/10</span><span class="t">Nhấp vào để xem</span></div>
+</div>
+
+<div id="bg" aria-hidden="true">
+  <div class="rays"></div>
+  <svg class="hills" viewBox="0 0 1000 300" preserveAspectRatio="none">
+    <path class="h1" d="M0 120C120 70 240 100 360 80C500 55 620 100 760 70C860 52 940 80 1000 60V300H0Z"/>
+    <path class="h2" d="M0 170C140 130 260 175 420 150C580 125 700 175 860 145C930 132 970 140 1000 135V300H0Z"/>
+    <path class="h3" d="M0 225C160 195 300 235 480 212C650 190 800 235 1000 205V300H0Z"/>
+  </svg>
+  <svg id="garden"></svg>
+</div>
+
+<main class="scene">
+  <h1>Tặng mẹ một bó hoa</h1>
+  <p class="sub">Ngày 20 tháng 10</p>
+  <button id="bq" aria-label="Thêm một bông hoa vào bó">
+    <svg viewBox="0 0 400 470" aria-hidden="true">
+      <defs id="defs"></defs>
+      <path d="M104 255Q200 285 296 255L228 458Q200 468 172 458Z" fill="#cfae6f"/>
+      <g id="leaves"></g>
+      <g id="stems"></g>
+      <g id="heads"></g>
+      <path d="M104 255Q200 330 296 255L228 458Q200 468 172 458Z" fill="#ecd7a3"/><path d="M104 255Q152 300 200 296L196 460Q184 460 172 458Z" fill="#f6e8c3"/><path d="M200 296L204 462" stroke="#cdb27a" stroke-width="1.3" fill="none"/>
+      <path d="M134 338Q200 352 266 338L262 353Q200 367 138 353Z" fill="#b83a4b"/>
+      <ellipse cx="176" cy="355" rx="21" ry="10" transform="rotate(-22 176 355)" fill="#b83a4b"/>
+      <ellipse cx="224" cy="355" rx="21" ry="10" transform="rotate(22 224 355)" fill="#b83a4b"/>
+      <path d="M198 358L180 404L193 398L199 412Z" fill="#a33346"/><path d="M202 358L220 404L207 398L201 412Z" fill="#a33346"/><circle cx="200" cy="356" r="7" fill="#8f2a39"/>
+    </svg>
+  </button>
+  <div class="dock">
+    <div id="prog">
+      <p id="hint">Nhấn để tạo bó hoa</p>
+      <p id="cnt">0 / 10</p>
+    </div>
+    <button id="env" class="env" hidden aria-label="Mở thư"><span class="ltr"></span><span class="fp"></span><span class="seal"></span></button>
+    <p id="et" hidden>Có một bức thư gửi mẹ. Nhấn vào để mở.</p>
+  </div>
+</main>
+
+<div id="cw" hidden role="dialog" aria-modal="true" aria-label="Thiệp gửi mẹ">
+  <article class="card">
+    <div class="cover" id="cv"><svg class="orn" viewBox="-34 -34 68 68" aria-hidden="true"><use href="#rose"/></svg><span class="ct">Gửi mẹ</span><span class="cs">Nhân ngày 20/10</span></div>
+    <h2>Gửi mẹ,</h2>
+    <div id="msg"></div>
+    <button id="x" class="x">Đóng thiệp</button>
+  </article>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
